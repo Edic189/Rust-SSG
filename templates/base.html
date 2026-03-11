@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust SSG</title>
+    <link rel="icon" type="image/x-icon" href="{{ root_path }}slike/favicon/favicon.ico">
+    <link rel="stylesheet" href="{{ root_path }}style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ root_path }}index.html" class="btn-nav">Home</a></li>
+                <li><a href="{{ root_path }}blog.html" class="btn-nav">Blog</a></li>
+                <li><a href="{{ root_path }}about.html" class="btn-nav">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</div>
+
+</body>
+</html>

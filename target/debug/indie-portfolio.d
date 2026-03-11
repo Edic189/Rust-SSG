@@ -1,0 +1,1 @@
+/Users/lukaprlic/Documents/Rust\ Projekti/Rust\ SSG/target/debug/indie-portfolio: /Users/lukaprlic/Documents/Rust\ Projekti/Rust\ SSG/src/blog.rs /Users/lukaprlic/Documents/Rust\ Projekti/Rust\ SSG/src/main.rs /Users/lukaprlic/Documents/Rust\ Projekti/Rust\ SSG/src/models.rs /Users/lukaprlic/Documents/Rust\ Projekti/Rust\ SSG/src/utils.rs

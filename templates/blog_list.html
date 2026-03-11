@@ -1,0 +1,10 @@
+<h1>Blog</h1>
+<p>Etiam convallis maximus ante sit amet feugiat. Sed varius gravida ante, et feugiat lectus elementum scelerisque. Aliquam rutrum pellentesque sollicitudin. Ut sagittis risus purus, vitae bibendum lorem facilisis non. Praesent ullamcorper, eros sed faucibus ullamcorper, metus quam vestibulum ante, sit amet facilisis sapien urna non lacus. Quisque sit amet est velit. Donec maximus, mi non facilisis consectetur, orci odio semper enim, quis efficitur risus turpis ac nunc. Proin eleifend hendrerit tincidunt. Aenean eu massa lectus.</p>
+<div class="blog-grid">
+    {% for post in posts %}
+    <div class="blog-card">
+        <h3>{{ post.title }}</h3>
+        <a href="blog/{{ post.slug }}.html" class="btn-tropical">Read -></a>
+    </div>
+    {% endfor %}
+</div>

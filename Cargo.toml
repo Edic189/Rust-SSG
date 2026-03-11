@@ -1,0 +1,9 @@
+[package]
+name = "indie-portfolio"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pulldown-cmark = "0.9"
+minijinja = "1.0"
+serde = { version = "1.0.228", features = ["derive"] }
