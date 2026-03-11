@@ -1,14 +1,12 @@
-/* --- MODERNA PALETA BOJA (RUST TEMA) --- */
 :root {
-    --color-bg-outer: #F3F4F6;      /* Vrlo svijetla, neutralna siva pozadina */
-    --color-paper: #FFFFFF;         /* Čisto bijela za glavnu karticu */
-    --color-text-main: #1F2937;     /* Tamno siva (skoro crna) za lakše čitanje */
-    --color-text-muted: #6B7280;    /* Svjetlija siva za sporedni tekst */
-    --color-accent-primary: #DD5143; /* Rust narančasta za linkove i gumbe */
-    --color-accent-secondary: #E27D60; /* Nešto svjetlija Rust boja za hover efekte */
-    --color-border: #E5E7EB;        /* Suptilna boja za linije i obrube */
+    --color-bg-outer: #F3F4F6;      /* Main background */
+    --color-paper: #FFFFFF;         /* Main content container */
+    --color-text-main: #1F2937;     /* Text */
+    --color-text-muted: #6B7280;    /* Secondary text elements */
+    --color-accent-primary: #DD5143; /* Primary links and buttons */
+    --color-accent-secondary: #E27D60; /* Hover states */
+    --color-border: #E5E7EB;        /* Borders and dividers */
     
-    /* Moderne varijable za sjene i zaobljenja */
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 16px;
@@ -17,19 +15,18 @@
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
-/* --- OSNOVNI STIL --- */
+/* BASE STYLES */
 body {
     background-color: var(--color-bg-outer);
     color: var(--color-text-main);
-    /* Moderan sans-serif stack (koristi sistemske fontove ovisno o OS-u) */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 2rem 1rem;
-    -webkit-font-smoothing: antialiased; /* Ljepši prikaz fonta na ekranima */
+    -webkit-font-smoothing: antialiased;
 }
 
-/* Glavni kontejner (čist i jednostavan) */
+/* Main content wrapper */
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -40,7 +37,7 @@ body {
     border: 1px solid var(--color-border);
 }
 
-/* --- TIPOGRAFIJA --- */
+/* TYPOGRAPHY */
 h1, h2, h3, h4 {
     color: var(--color-text-main);
     font-weight: 700;
@@ -69,7 +66,7 @@ p {
     margin-bottom: 1.25rem;
 }
 
-/* --- LINKOVI & DUGMAD --- */
+/* LINKS & BUTTONS */
 a {
     color: var(--color-accent-primary);
     text-decoration: none;
@@ -81,7 +78,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Moderan gumb (zadržan stari naziv klase radi kompatibilnosti) */
+/* Standard button styling */
 .btn-tropical {
     display: inline-block;
     background: var(--color-accent-primary);
@@ -103,11 +100,11 @@ a:hover {
     text-decoration: none;
 }
 
-/* --- NAVIGACIJA (PROPORCIONALNA I RESPONZIVNA) --- */
+/* NAVIGATION */
 header {
-    margin-bottom: 2rem; /* Smanjeno sa 3rem za manje praznog hoda */
-    padding-bottom: 1rem; /* Smanjeno sa 1.5rem */
-    border-bottom: 1px solid var(--color-border); /* Tanja, elegantnija linija */
+    margin-bottom: 2rem; 
+    padding-bottom: 1rem; 
+    border-bottom: 1px solid var(--color-border); 
 }
 
 nav ul {
@@ -116,8 +113,8 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center; 
-    flex-wrap: wrap; /* KLJUČNO: Dozvoljava prelazak u novi red na uskim ekranima */
-    gap: 1.5rem; /* Prepolovljen razmak (sa 3rem) - puno prirodnije */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 1.5rem; 
 }
 
 nav a.btn-nav {
@@ -135,7 +132,7 @@ nav a.btn-nav:hover {
     color: var(--color-accent-primary);
 }
 
-/* Elegantna linija ispod linka */
+/* Animated underline effect for navigation links */
 nav a.btn-nav::after {
     content: '';
     position: absolute;
@@ -152,14 +149,14 @@ nav a.btn-nav:hover::after {
     width: 100%; 
 }
 
-/* --- RESPONZIVNOST ZA MOBITELE (NOVO) --- */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 480px) {
     nav ul {
-        gap: 0.75rem; /* Na uskim mobitelima linkovi su bliže jedan drugome */
+        gap: 0.75rem;
     }
     
     nav a.btn-nav {
-        font-size: 1rem; /* Blago smanjen font da sve stane u jedan red ako je moguće */
+        font-size: 1rem;
         padding: 0.25rem;
     }
     
@@ -168,10 +165,11 @@ nav a.btn-nav:hover::after {
         padding-bottom: 0.5rem;
     }
 }
-/* --- KOMPONENTE --- */
-/* Kod blokovi */
+
+/* COMPONENTS */
+/* Code blocks */
 pre {
-    background: #1E1E1E; /* Tamna tema za kod */
+    background: #1E1E1E;
     color: #D4D4D4;
     padding: 1.5rem;
     border-radius: var(--radius-md);
@@ -181,10 +179,10 @@ pre {
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.rust-keyword { color: #569CD6; } /* VS Code plava */
-.rust-string { color: #CE9178; }  /* VS Code narančasta */
+.rust-keyword { color: #569CD6; } 
+.rust-string { color: #CE9178; }  
 
-/* Blockquote za citate */
+/* Blockquotes */
 blockquote {
     margin: 2rem 0;
     padding: 1rem 1.5rem;
@@ -195,7 +193,7 @@ blockquote {
     border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
-/* Slike */
+/* Images */
 img {
     max-width: 100%;
     height: auto;
@@ -213,7 +211,7 @@ footer {
     text-align: center;
 }
 
-/* --- BLOG KARTICE (SA "FULL-WIDTH" TIPKOM NA DNU) --- */
+/* BLOG CARDS */
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -225,40 +223,38 @@ footer {
     background: var(--color-paper);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-lg); 
-    /* Maknuli smo donji padding kako bi se tipka zalijepila za dno */
-    padding: 2rem 1.5rem 0 1.5rem; 
+    padding: 2rem 1.5rem 0 1.5rem;
     display: flex;
     flex-direction: column;
     min-height: 180px; 
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: var(--shadow-sm);
     position: relative;
-    overflow: hidden; /* Osigurava da donji rubovi tipke ostanu zaobljeni */
+    overflow: hidden;
 }
 
-/* Hover efekt na cijeloj kartici podiže sjenku */
+/* Card hover animation */
 .blog-card:hover {
     transform: translateY(-5px); 
     box-shadow: var(--shadow-lg); 
 }
 
 .blog-card h3 {
-    margin: 0 0 2rem 0; /* Gura tipku prema dolje */
+    margin: 0 0 2rem 0; 
     font-size: 1.35rem;
     font-weight: 700;
     color: var(--color-text-main);
     line-height: 1.4;
-    flex-grow: 1; /* Naslov zauzima preostali prostor */
+    flex-grow: 1;
 }
 
-/* --- TIPKA (CIJELI DONJI DIO KARTICE) --- */
+
 .blog-card .btn-tropical {
-    /* Negativne margine vuku tipku do samih rubova kartice */
-    margin: auto -1.5rem 0 -1.5rem; 
+    margin: auto -1.5rem 0 -1.5rem;
     padding: 1rem;
-    background: var(--color-bg-outer); /* Svjetlo siva pozadina */
+    background: var(--color-bg-outer); 
     border: none;
-    border-top: 1px solid var(--color-border); /* Odvaja tipku od naslova */
+    border-top: 1px solid var(--color-border); 
     border-radius: 0; 
     color: var(--color-text-muted);
     font-weight: 600;
@@ -270,26 +266,17 @@ footer {
     transition: all 0.3s ease;
 }
 
-/* Kada pređeš mišem preko BILO KOJEG dijela kartice, tipka zasvijetli! */
 .blog-card:hover .btn-tropical,
 .blog-card .btn-tropical:hover {
-    background: var(--color-accent-primary); /* Postaje Rust narančasta */
+    background: var(--color-accent-primary); 
     color: #FFFFFF;
     border-top-color: var(--color-accent-primary);
-    transform: none; /* Uklonjeno klizanje, tipka stoji čvrsto */
+    transform: none; 
 }
 
+/* --- GENERAL MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
     .container {
         padding: 1.5rem;
-    }
-    .games-split-layout {
-        flex-direction: column-reverse; 
-    }
-    .chat-sidebar {
-        width: 100%;
-        height: 350px;
-        position: static;
-        box-sizing: border-box;
     }
 }
