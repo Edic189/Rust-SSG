@@ -149,22 +149,6 @@ nav a.btn-nav:hover::after {
     width: 100%; 
 }
 
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 480px) {
-    nav ul {
-        gap: 0.75rem;
-    }
-    
-    nav a.btn-nav {
-        font-size: 1rem;
-        padding: 0.25rem;
-    }
-    
-    header {
-        margin-bottom: 1.5rem;
-        padding-bottom: 0.5rem;
-    }
-}
 
 /* COMPONENTS */
 /* Code blocks */
@@ -274,9 +258,25 @@ footer {
     transform: none; 
 }
 
-/* --- GENERAL MOBILE RESPONSIVENESS --- */
+/* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
     .container {
         padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        gap: 0.75rem;
+    }
+    
+    nav a.btn-nav {
+        font-size: 1rem;
+        padding: 0.25rem;
+    }
+    
+    header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
     }
 }
