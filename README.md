@@ -30,3 +30,5 @@ The project uses a template engine to maintain a consistent layout across all ge
 2. **Build and Generate**: Run the following command in the root of the project to compile the Rust code and generate the site:
    ```bash
    cargo run
+   ```
+   This will process everything and output the final, ready-to-deploy HTML files into the `public/` directory.
