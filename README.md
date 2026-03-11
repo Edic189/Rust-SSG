@@ -1,7 +1,8 @@
 # Rust Custom Static Site Generator
 
 A custom, lightweight Static Site Generator (SSG) built entirely in Rust. It converts Markdown files into static HTML pages, designed for simplicity, speed, and easy automation with Markdown-based note-taking tools like Obsidian.
-
+![screenshot](screenshots/screenshot.png)
+![screenshot](screenshots/screenshot1.png)
 ## Project Structure
 
 The repository is organized into four distinct directories:
